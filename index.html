@@ -19,9 +19,9 @@
 
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <a class="navbar-brand" href="#">SALON BEAU</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,10 +30,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Team</a>
@@ -94,7 +91,7 @@
 
     <!-- SERVICES -->
     <section>
-        <div class="container text-center width-50">
+        <div class="text-center py-5">
             <h2 class="py-3">Services</h2>
             <div class="mx-auto heading-line"></div>
         </div>
@@ -124,18 +121,16 @@
                     <i class="fa fa-user"></i>
                     <h4 class="py-3">Style</h4>
                     <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat.</p>
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- PORTFOLIO -->
     <section class="portfolio container-fluid bg-light">
-        <div class="container text-center w-50">
+        <div class="text-center py-5">
             <h2 class="py-3">Hair Styling &amp; Barbering</h2>
             <div class="mx-auto heading-line"></div>
         </div>
@@ -153,9 +148,47 @@
                     <a class="m-2" href="#"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
-        
         </div>
     </section>
+
+    <!-- CONTACT US -->
+    <section class="contact">
+        <div class="container">
+            <div class="text-center py-5">
+                <h2 class="py-3">Services</h2>
+                <div class="mx-auto heading-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Google Map -->
+                    <div id="map-container-google-1" class="z-depth-1-half map container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858324.084171141!2d-117.66805025763797!3d32.823310014340926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1575948915891!5m2!1sen!2sus"
+                            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <!-- Google Map -->
+                </div>
+                <form class="col-lg-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="email" aria-describedby="emailHint" placeholder="Enter Email">
+                        <small id="emailHint" class="form-text text-muted">We'll Never Share Your Info</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" class="form-control" type="text" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
