@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1.h2.h3 {
+    font-weight: 900;
+}
+
+h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* BUTTONS */
+
+.btn-outline-secondary {
+    background-color: transparent !important;
+    border-color: #011627 !important;
+    color: #011627 !important;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary:before {
+    content: '';
+    position: absolute;
+    background-color: #83f3ED;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover::before {
+    width: 100%;
+}
+
+.btn-secondary {
+    background: #011627 !important;
+    border-radius: 0%;
+    border-color: #011627 !important;
+}
+
+.btn-secondary:hover {
+    color: #83f3ED !important;
+}
+
+.btn-primary {
+    background: #83f3ED !important;
+    border-radius: 0%;
+    border-color: #83f3ED !important;
+    color: #011627 !important;
+}
+
+.btn-primary:hover {
+    background: #011627 !important;
+    color: #83f3ED !important;
+}
