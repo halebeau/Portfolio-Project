@@ -57,3 +57,96 @@ h4, h5, h6 {
     background: #011627 !important;
     color: #83f3ED !important;
 }
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-link, .navbar-brand {
+    color: #011627;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #777;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+/* CALL TO ACTION */
+
+.call-to-action {
+    background: #011627;
+    color: #fafaff;
+}
+
+.heading-line {
+    height: 3px;
+    width: 10%;
+    background: #83f8ed;
+}
+
+/* SERVICES */
+
+.services i {
+    font-size: 2rem;
+    color: #83f3ED;
+}
+
+/* PORTFOLIO */
+
+.dark {
+    color: #83f3ED;
+    background: #011627;
+    height: 300px;
+}
+
+.dark i {
+    font-size: 1.3rem;
+    color: #83f3ED;
+}
+
+.portfolio .img-fluid {
+    height: 300px;
+    object-fit: cover;
+}
+
+.portfolio .col-lg-3 {
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #83f3ED;
+    opacity: 0.8;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #011627;
+    color: #fafaff;
+}
+
+.footer a{
+    color: #fafaff;
+}
+
+/* RESPONSIVENESS */
+
+@media(max-width: 900px) {
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .call-to-action .container{
+        width: 100% !important;
+    }
+}
