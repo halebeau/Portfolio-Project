@@ -15,5 +15,9 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "wowjs": "^1.1.3"
   }
 }

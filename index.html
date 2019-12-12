@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +12,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Style -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
 
@@ -19,13 +22,13 @@
 
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container">
             <a class="navbar-brand text-info" href="#">SALON BEAU</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                 <ul class="nav">
@@ -49,16 +52,17 @@
         </div>
     </nav>
     <!-- HOME -->
-    <section class="home container">
+    <section class="home container mb-5">
         <div class="row mt-5">
             <div class="col-lg-6 mt-5 py-5 pl-5">
-                <img class="img-fluid" alt="Salon Picture" src="img/salon_image.jpg">
+                <img class="animated zoomIn img-fluid" alt="Salon Picture" src="img/salon_image.jpg">
             </div>
             <div class="col-lg-6 my-auto">
                 <div class="row">
-                    <div class="home-content offset-lg-1 col-lg-10">
-                        <h1 class="pb-3">I am an Artist and hair is my Canvas</h1>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <div class="home-content offset-lg-1 col-lg-10 overflow-hidden">
+                        <h1 class="animated slideInLeft delay-1s pb-3">I am an Artist and hair is my Canvas</h1>
+                        <p class="animated slideInLeft delay-2s pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             ex ea commodo consequat. Duis
@@ -66,8 +70,8 @@
                             pariatur. Excepteur sint
                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                             laborum.</p>
-                        <button class="btn btn-lg btn-outline-secondary">Learn More</button>
-                        <button class="btn btn-lg btn-secondary">Contact Us</button>
+                        <button class="animated zoomIn delay-3s btn btn-lg btn-outline-secondary">Learn More</button>
+                        <button class="animated zoomIn delay-3s btn btn-lg btn-secondary">Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -75,8 +79,8 @@
     </section>
     <!-- CALL TO ACTION -->
     <section class="call-to-action py-5">
-        <div class="container text-center width-50">
-            <h2 class="py-3">Call to Action</h2>
+        <div class="container text-center">
+            <h2 class="wow animated slideInDown py-3">Call to Action</h2>
             <div class="mx-auto heading-line"></div>
             <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna
@@ -97,7 +101,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="wow animated fadeInLeft col-md-4 text-center">
                     <i class="fa fa-user"></i>
                     <h4 class="py-3">Cut</h4>
                     <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -107,7 +111,7 @@
                         commodo
                         consequat.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-user"></i>
                     <h4 class="py-3">Color</h4>
                     <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -117,7 +121,7 @@
                         commodo
                         consequat.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="wow animated fadeInRight col-md-4 text-center">
                     <i class="fa fa-user"></i>
                     <h4 class="py-3">Style</h4>
                     <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -128,6 +132,7 @@
             </div>
         </div>
     </section>
+
     <!-- PORTFOLIO -->
     <section class="portfolio container-fluid bg-light">
         <div class="text-center py-5">
@@ -135,18 +140,21 @@
             <div class="mx-auto heading-line"></div>
         </div>
         <div class="row">
-            <div class="col-lg-3 pr-5 d-flex justify-content-around">
+            <div class="col-md-3 p-0">
                 <div class="filter"></div>
                 <img class="img-fluid" src="img/w_doing_hair.jpeg" alt="Woman Doing Hair">
-                <img class="img-fluid" src="img/m_doing_hair.jpeg" alt="Man Doing Hair">
             </div>
-            <div class="col-lg-3 dark d-flex align-items-center justify-content-center">
+            <div class="col-md-3 dark d-flex align-items-center justify-content-center">
                 <div class="text-center">
                     <h4 class="py-3">Men &amp; Women</h4>
                     <a class="m-2" href="#"><i class="fa fa-facebook"></i></a>
                     <a class="m-2" href="#"><i class="fa fa-twitter"></i></a>
                     <a class="m-2" href="#"><i class="fa fa-instagram"></i></a>
                 </div>
+            </div>
+            <div class="col-md-3 p-0">
+                <div class="filter"></div>
+                <img class="img-fluid" src="img/man_hair.jpg" alt="Man Doing Hair">
             </div>
         </div>
     </section>
@@ -155,7 +163,7 @@
     <section class="contact">
         <div class="container">
             <div class="text-center py-5">
-                <h2 class="py-3">Services</h2>
+                <h2 class="py-3">Info</h2>
                 <div class="mx-auto heading-line"></div>
             </div>
             <div class="row">
@@ -168,7 +176,7 @@
                     </div>
                     <!-- Google Map -->
                 </div>
-                <form class="col-lg-6">
+                <form class="col-lg-6 mb-4">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input id="email" class="form-control" type="email" aria-describedby="emailHint"
@@ -183,7 +191,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
+                    <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
                 </form>
             </div>
         </div>
@@ -198,9 +206,9 @@
         <div class="row mb-3">
             <div class="col-lg-8 offset-lg-2 text-center">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Us</a>
@@ -234,6 +242,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script></body>
 
 </html>
