@@ -10,11 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Style -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
 
@@ -33,29 +32,48 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-info" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-info" href="#"><i class="fa fa-home fa-lg"></i>Home <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="#">Team</a>
+                        <a class="nav-link text-info" href="#"><i class="fa fa-child" aria-hidden="true"></i>
+                            Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="#">Services</a>
+                        <a class="nav-link text-info" href="#"><i class="fa fa-scissors" aria-hidden="true"></i>
+                            Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="#">Gallery</a>
+                        <a class="nav-link text-info" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-secondary" href="#">Contact Us</a>
+                        <a class="nav-link btn btn-outline-secondary" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- HOME -->
+
+    <!-- BODY -->
     <section class="home container mb-5">
-        <div class="row mt-5">
+        <div class="row row-content mt-5">
+
+            <!-- IMAGE CAROUSEL -->
             <div class="col-lg-6 mt-5 py-5 pl-5">
-                <img class="animated zoomIn img-fluid" alt="Salon Picture" src="img/salon_image.jpg">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="img/salon_image1.jpg" class="d-block w-100" alt="Salon Picture">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="img/salon_image2.jpg" class="d-block w-100" alt="Salon Picture">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="img/salon_image3.jpg" class="d-block w-100" alt="Salon Picture">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6 my-auto">
                 <div class="row">
@@ -67,15 +85,20 @@
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             ex ea commodo consequat. Duis
                             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.</p>
+                            pariatur. </p>
                         <button class="animated zoomIn delay-3s btn btn-lg btn-outline-secondary">Learn More</button>
-                        <button class="animated zoomIn delay-3s btn btn-lg btn-secondary">Contact Us</button>
+                        <button class="animated zoomIn delay-3s btn btn-lg btn-secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Make Appt
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Type</a>
+                            <a class="dropdown-item" href="#">Date</a>
+                            <a class="dropdown-item" href="#">Time</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- CALL TO ACTION -->
     <section class="call-to-action py-5">
@@ -140,19 +163,20 @@
             <div class="mx-auto heading-line"></div>
         </div>
         <div class="row">
-            <div class="col-md-3 p-0">
+            <div class="col-md-4 p-0">
                 <div class="filter"></div>
                 <img class="img-fluid" src="img/w_doing_hair.jpeg" alt="Woman Doing Hair">
             </div>
-            <div class="col-md-3 dark d-flex align-items-center justify-content-center">
+            <div class="col-md-4 dark d-flex align-items-center justify-content-center">
                 <div class="text-center">
-                    <h4 class="py-3">Men &amp; Women</h4>
-                    <a class="m-2" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="m-2" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="m-2" href="#"><i class="fa fa-instagram"></i></a>
+                    <h4 class="py-3">Women &amp; Men</h4>
+                    <a class="m-3" href="#"><i class="fa fa-heart"></i></a>
+                    <a class="m-3" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="m-3" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="m-3" href="#"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-md-3 p-0">
+            <div class="col-md-4 p-0">
                 <div class="filter"></div>
                 <img class="img-fluid" src="img/man_hair.jpg" alt="Man Doing Hair">
             </div>
@@ -163,7 +187,7 @@
     <section class="contact">
         <div class="container">
             <div class="text-center py-5">
-                <h2 class="py-3">Info</h2>
+                <h2 class="py-3">Meet Us</h2>
                 <div class="mx-auto heading-line"></div>
             </div>
             <div class="row">
@@ -189,7 +213,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
+                        <textarea id="message" class="form-control" placeholder="Enter Message" rows="2"></textarea>
                     </div>
                     <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
                 </form>
@@ -227,7 +251,7 @@
         </div>
         <div class="Footer text-center py-3 border-top text-muted">
             <p>Site Design by Beau Hale &copy; 2019</p>
-            <a href="http://coderbeau.com/" class="text-info stretched-link">coderbeau.com</a>
+            <a href="http://coderbeau.com/" class="text-info">coderbeau.com</a>
         </div>
     </footer>
 
@@ -242,9 +266,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script></body>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
 
 </html>
